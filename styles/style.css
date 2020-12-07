@@ -1,0 +1,467 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+section,
+article,
+main,
+footer {
+  flex: 1;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+img {
+  width: 100%;
+}
+main {
+  height: 100vh;
+  padding-top: 15vh;
+  background-color: #000;
+}
+main .header .nav-desktop {
+  display: none;
+}
+main .header {
+  background-color: rgba(0, 0, 0, 0.815);
+  height: 15vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  border-radius: 0 0 5px 5px;
+}
+main .header .container {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .header .container .logo {
+  max-width: 70px;
+  background-color: rgb(19, 19, 19);
+  border-radius: 20px;
+}
+main .header .container .nav {
+  background-color: rgb(19, 19, 19);
+  padding: 0.5rem 0.7rem;
+  border-radius: 100px;
+  z-index: 1;
+}
+main .header .container .nav:hover {
+  background: rgb(29, 29, 29);
+}
+main .header .container .logo:hover {
+  background: rgb(29, 29, 29);
+}
+main .hero {
+  height: 85vh;
+  background: url("../image/hero-bg.gif");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.486);
+  background-blend-mode: multiply;
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 -3px rgb(255, 222, 32) inset;
+}
+main .hero:after {
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: 105px solid transparent;
+  border-right: 105px solid #000;
+}
+main .hero:before {
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: 120px solid transparent;
+  border-right: 105px solid rgb(255, 222, 32);
+}
+
+main .hero .container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .hero .container h5,
+h4 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+}
+main .hero .container h5 {
+  margin-bottom: 5em;
+}
+main .hero .container img {
+  width: 90%;
+}
+main .hero .container .plays {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+  width: 80%;
+  justify-content: space-evenly;
+}
+main .hero .container .plays img {
+  width: 150px;
+}
+main .hero .container .plays span img {
+  width: 122px;
+}
+
+section {
+  height: 165vh;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 4em;
+  padding-top: 7em;
+}
+section .news {
+  margin: 0 auto;
+}
+section .news h3 {
+  margin-bottom: 0.5em;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
+section .news .image {
+  background: url("../image/news.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0px 0px 100px rgba(255, 208, 0, 0.322) inset;
+}
+section .news .image h5,
+p {
+  color: #fff;
+}
+section .news .image h5 {
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+section .news .image h5 span {
+  color: yellow;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+}
+section .news .image p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 0.2em;
+  display: flex;
+  align-items: center;
+}
+section .news .image p img {
+  width: 30px;
+  margin-right: 0.5rem;
+}
+section .news .image .caption {
+  padding: 1rem 1.5rem;
+}
+section .news .image:after {
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: 55px solid transparent;
+  border-right: 55px solid #000;
+}
+section .news .image:before {
+  content: "";
+  width: 200px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: yellow 7px solid;
+  border-right: transparent 15px solid;
+}
+section .news h4 {
+  margin: 2em 0.5em;
+  color: yellow;
+}
+
+section .instructions {
+  margin-top: 4em;
+}
+section .instructions h1 {
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+section .instructions h1 span {
+  color: rgba(255, 255, 0, 0.856);
+}
+section .instructions .container {
+  margin: 0 auto;
+}
+section .instructions .container img {
+  margin: 2em 0;
+}
+section .instructions .container .caption {
+  display: flex;
+  align-items: center;
+}
+section .instructions .container .caption img {
+  width: 30px;
+  margin: 0;
+  margin: 0 0.5em;
+}
+section .instructions .container p {
+  width: 90%;
+  margin: 0.5em auto;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+section .instructions .learn {
+  text-align: center;
+  margin-top: 2em;
+}
+section .instructions .learn a {
+  display: inline-block;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  padding: 1rem;
+  position: relative;
+  color: #000;
+}
+section .instructions .learn a::after {
+  content: "'";
+  color: transparent;
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  right: -8px;
+  top: -4px;
+  z-index: -1;
+  border-radius: 3px;
+  background-color: yellow;
+  transform: skew(-30deg);
+  -webkit-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -ms-transform: skew(-30deg);
+}
+article {
+  height: 90vh;
+  background: url("../image/codm.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.336);
+  background-blend-mode: multiply;
+  margin-top: 5rem;
+}
+article img {
+  width: 200px;
+}
+article .content-2 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+article .plays {
+  display: flex;
+  align-items: center;
+}
+article .plays span img {
+  width: 160px;
+}
+footer {
+  height: 80vh;
+  width: 80%;
+  margin: 3em auto;
+  padding-top: 5vh;
+}
+footer .captions {
+  text-align: center;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5em;
+}
+footer .captions p {
+  color: rgb(212, 202, 202);
+}
+footer .icons a {
+  color: rgb(177, 177, 177);
+  margin: 0 0.2em;
+}
+footer .logo {
+  width: 80%;
+  margin: 0 auto;
+}
+footer .icons {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 1em;
+}
+footer .terms {
+  text-align: center;
+  margin-top: 5em;
+  font-size: small;
+}
+footer .terms a {
+  text-decoration: underline;
+  margin: 0 0.5em;
+  color: rgb(199, 199, 199);
+}
+
+@media (min-width: 501px) {
+  main .hero .container img {
+    width: 100%;
+  }
+  main .hero .container h5 {
+    margin-bottom: 2em;
+  }
+  main .hero .container .plays {
+    margin-top: 2em;
+  }
+  article {
+    margin-top: 8em;
+  }
+}
+@media (min-width: 750px) {
+  article {
+    margin-top: 10em;
+  }
+  main .header .container .nav {
+    display: none;
+  }
+  main .header .container .nav-desktop {
+    display: block;
+  }
+}
+@media (min-width: 800px) {
+  article {
+    margin-top: 25em;
+  }
+  main .hero .container img {
+    width: 800px;
+  }
+  main .hero .container h5 {
+    font-size: 1.5rem;
+    margin: 0em;
+  }
+  main .hero .container h4 {
+    margin-top: 3em;
+  }
+  main .hero .container .plays {
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  main .hero .container .plays img {
+    width: 250px;
+  }
+  main .hero .container .plays span img {
+    width: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  article {
+    margin-top: 30em;
+  }
+}
+
+main .header .nav-desktop ul {
+  display: flex;
+  list-style: none;
+}
+main .header .nav-desktop ul li {
+  margin-left: 2em;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main .header .nav-mobile ul {
+  list-style: none;
+}
+main .header .nav-mobile {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.884);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+main .header .nav-mobile ul li {
+  margin: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+main .nav-mobile.toggleCls {
+  display: block;
+  padding-top: 25vh;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 1; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(255, 255, 0, 0.699); /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0.5rem 0.7rem;
+  border-radius: 10px; /* Rounded corners */
+  font-size: 1.8rem; /* Increase font size */
+}

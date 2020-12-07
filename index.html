@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Call of Duty Mobile</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="https://kit.fontawesome.com/b11431a613.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i>
+  </button>
+  <main id="home">
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="#home"><img src="./image/m.png" alt=""></a>
+        </div>
+        <div class="nav" onclick="show()">
+         <a href="#navsad"><img src="./image/burger.png" alt=""></a>
+        </div>
+        <div class="nav-desktop">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#update">Update</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+          </ul>
+        </div>
+        <div class="nav-mobile"">
+          <ul>
+            <li><a href="#home" onclick="show()">Home</a></li>
+            <li><a href="#update"onclick="show()">Update</a></li>
+            <li><a href="#about"onclick="show()">About</a></li>
+            <li><a href="#service"onclick="show()">Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="container">
+        <img class="brand" src="./image/logo.png" alt="">
+        <h5>call of duty, now on mobile.</h5>
+        <h4>available on</h4>
+        <div class="plays">
+          <a href="#"><img src="./image/gplay.png" alt=""></a>
+          <a href="#"><span><img src="./image/app.png" alt=""></span></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section id="update">
+      <div class="news">
+        <h3>Latest News</h3>
+        <div class="image">
+          <div class="caption">
+            <h5>11-17-2020 &#xb7; <span>Game Updates</span></h5>
+            <p><img src="./image/garena.png" alt=""> Payment Methods in Garena</p>
+          </div>
+        </div>
+        <h4>Go To news page &gt;</h4>
+      </div>
+      <div class="instructions">
+        <div class="container">
+          <h1>Welcome to</h1>
+          <h1>Call Of Duty <span>Mobile</span></h1>
+          <img src="./image/ins.png" alt="">
+          <div class="caption">
+            <img src="./image/aim.png" alt="">
+            <h4>Bold Competition</h4>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa tempore saepe libero, repellat nobis qui necessitatibus illum? Voluptas veritatis minima nulla, quisquam neque facilis maiores.</p>
+        </div>
+        <div class="learn">
+          <a href="#">learn more</a>
+        </div>
+      </div>
+  </section>
+  <article id="about">
+    <div class="content-2">
+      <div class="plays">
+        <img src="./image/gplay.png" alt="">
+        <span><img src="./image/app.png" alt=""></span>
+      </div>
+    </div>
+  </article>
+  <footer id="service">
+    <div class="logo">
+      <img src="./image/gg.png" alt="">
+    </div>
+    <div class="icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="captions">
+      <p>&#169; 2018-2020 Garena Games, Inc. GARENA GAMES, CALL OF DUTY MOBILE and any associated logos are trademarks, service marks, and/or registered trademarks of Garena Games, Inc.</p>
+    </div>
+    <div class="terms">
+      <a href="#">Privacy Notice</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Preferences</a>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
